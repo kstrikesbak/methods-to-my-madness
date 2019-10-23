@@ -15,8 +15,13 @@ function repeat(str, repetitions) {
   return newStr
 }
 
-function startsWith(string, substring) {
+function startsWith(str, substring) {
+  for (let i=0; i<str.length; i++) {
+    return  str[0].includes(substring[0])
+  }
 }
+
+
 
 function endsWith(str, substring) {
 }
@@ -32,6 +37,9 @@ function split(str, separator) {
 }
 
 function trimStart(str) {
+  for (let i=0;i<str.length;i++) {
+
+  }
 }
 
 function trimEnd(str) {
