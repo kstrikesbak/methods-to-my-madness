@@ -30,9 +30,23 @@ function endsWith(str, substring) {
 }
 
 function includes(arr, item) {
+  for (let i=0;i<arr.length;i++) {
+    if (arr[i]===item) {
+      return true
+    }
+  
+  }
+  
+  return false 
 }
 
+const arr = [3, 6, 9];
+includes(arr, 6);
+
 function join(arr, separator = '') {
+  for (let i=0;i<arr.length;i++) {
+
+  }
 }
 
 
