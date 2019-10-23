@@ -16,10 +16,12 @@ function repeat(str, repetitions) {
 }
 
 function startsWith(str, substring) {
-  for (let i=0; i<str.length; i++) {
-    return  str[0].includes(substring[0])
+  for (let i=0; i<substring.length; i++) {
+    if(str[i]!==substring[i]) {
+      return false
+    } 
+    } return true
   }
-}
 
 
 
@@ -54,6 +56,18 @@ return newStr
 
 
 function split(str, separator) {
+  let newStr = ''
+  let newArr = []
+  for(let i=0; i <str.length; i++){
+    if(str[i].includes(separator)){ 
+      if (true) {
+        newArr.push(newStr + str.slice(0,i))
+        newArr.push(newStr + str.slice(i+1))}
+      
+}
+  } 
+return newArr
+
 }
 
 function trimStart(str) {

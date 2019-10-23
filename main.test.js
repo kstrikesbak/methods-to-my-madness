@@ -48,6 +48,7 @@ describe('startsWith', () => {
     expect(startsWith('hello', 'e')).toBe(false)
     expect(startsWith('goodbye', 'g')).toBe(true)
     expect(startsWith('goodbye', 'e')).toBe(false)
+    
   })
   
   it(`can tell whether the first given string starts with the second multi-character string`, () => {
@@ -55,6 +56,7 @@ describe('startsWith', () => {
     expect(startsWith('hello', 'ello')).toBe(false)
     expect(startsWith('goodbye', 'good')).toBe(true)
     expect(startsWith('goodbye', 'bye')).toBe(false)
+    expect(startsWith('hello', 'hll')).toBe(false)
   })
   
   it(`can tell whether the first given string starts with the second given string when the strings are identical`, () => {
