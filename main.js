@@ -24,6 +24,9 @@ function startsWith(str, substring) {
 
 
 function endsWith(str, substring) {
+  for (let i=0; i<str.length; i++) {
+    return  str[str.length -1].includes(substring[substring.length-1])
+  }
 }
 
 function includes(arr, item) {
