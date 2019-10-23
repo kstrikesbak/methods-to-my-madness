@@ -34,9 +34,7 @@ function includes(arr, item) {
     if (arr[i]===item) {
       return true
     }
-  
   }
-  
   return false 
 }
 
@@ -44,9 +42,14 @@ const arr = [3, 6, 9];
 includes(arr, 6);
 
 function join(arr, separator = '') {
-  for (let i=0;i<arr.length;i++) {
-
-  }
+  let newStr =''
+  for(let i=0; i <arr.length; i++){
+    if(i=== arr.length-1){
+    newStr =newStr + arr[i]}
+    else{
+    newStr =newStr + arr[i] + separator}
+}
+return newStr
 }
 
 
